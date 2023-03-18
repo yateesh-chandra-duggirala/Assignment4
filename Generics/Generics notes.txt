@@ -1,0 +1,26 @@
+Java Generics:
+- Generics are used to store a specific type of objects.
+- This is used to deal with type- safe objects.
+- By using this, The code is made stable by detecting the bugs at compile time itself.
+
+
+Advantages:
+1. Type - Safety
+2. Type casting is Not required
+3. Checking during Compile-time
+
+Classes included in Generics:
+* ArrayList
+* LinkedList
+* HashSet
+* TreeSet
+* HashMap
+* Comparator
+
+Type Parameters:
+<E> : Element
+<T> : Type
+<K> : Key
+<N> : Number
+<V> : Value
+

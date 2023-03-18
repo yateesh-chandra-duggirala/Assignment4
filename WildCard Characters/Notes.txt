@@ -1,0 +1,56 @@
+WildCard:
+
+- The ? (question mark) symbol represents the wildcard element. It means any type.
+- If <? extends Number>, it means any child class of Number, e.g., Integer, Float, and Double.
+- The method of Number class can be called through any child class object.
+- We can use a wildcard as a type of a parameter, field, return type, or local variable.
+- We can not use a wild card as a type argument for a generic method invocation, a generic class Instance creation, or a supertype.
+
+
+Upper Bounded Wild Cards:
+
+* The purpose of the upper bounded wild cards is to decrease the restrictions on a variable.
+* It restricts the unknown type to be a specific type or a subtype of that type.
+* It is used by declaring 
+		
+		The wildcard Character("?") followed by extends(in case of, class) or impements(in case of, interface) keyword, followed by its upper bound.
+
+Syntax:
+
+		List<? extends Number>
+
+
+where ? is a wild card Character
+	 extends is a keyword
+	 Number is a class from the java.lang package
+
+
+Lower Bounded Wild Cards:
+
+* The purpose of the lower bounded wild cards is to restrict the unknown type to be specific type or super type of that type. 
+* It is used by declaring 
+		
+		The wildcard Character("?") followed by super keyword, followed by its lower bound.
+
+Syntax:
+
+		List<? super Integer>
+
+
+where ? is a wild card Character
+	 super is a keyword
+	 Integer is a wrapper class
+
+
+
+NOTE:
+
+List <? super Integer> is less restrictive than List<Integer>
+
+
+Unbounded Wild cards:
+
+* This represents the list of an unknown type such as List<?>
+* This approach is useful:
+a. When the given method is implemented by using the functionality provided in the Object Class.
+b. When the generic class contains the methods that don't depend on the type parameter.

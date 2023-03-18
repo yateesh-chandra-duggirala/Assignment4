@@ -1,0 +1,4 @@
+Difference between "==" and ".equals()"
+
+1. The "==" is an operator, where ".equals()" is a method.
+2. The operator is used when we need to compare reference(address) or memory location of objects, where as the ".equals()" method is used for the content comparison.

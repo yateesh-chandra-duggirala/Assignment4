@@ -1,0 +1,35 @@
+Exception: 
+		It is an event that disrupts the normal flow of the program. It is an object that is thrown at the runtime.
+
+Exception Handling:
+	This mechanism is used to handle the run time errors (like ClassNotFoundException, SQLException, IOException, RemoteException) and maintain the normal flow of the application or execution.
+
+* java.lang.Throwable class is the root of Java Exception hierarchy inherited by two subclasses: Exception and Error.
+
+Types:
+1. Checked Exception:
+	- Checked Exceptions are checked at Compile - time.
+	- The classes that directly inherit the Throwable class except RuntimeException and Error are known as checked exceptions.
+	- IOException, SQLException, ClassNotFoundException.
+
+2. Unchecked Exception:
+	- Unchecked Exceptions are not checked at compile - time, but they are checked at Run Time.
+	- The classes that inherit the RunTimeException are known as Unchecked Exceptions.
+	- ArithmeticException, NullPointerException, StirngIndexOutOfBoundsException, ArrayIndexOutOfBoundsException, NumberFormatException.
+
+3. Error:
+	- Error is irrecoverable.
+	- OutOfMemoryError, VirtualMachineError, AssertionError
+
+
+Keywords:
+
+1. Try : specifies a block where an exception code has to be placed. This can't be placed alone, It should follow by either catch or Finally.
+
+2. Catch : The "catch" block is used to handle the exception.
+
+3. Finaly : This block executes the necessary code of the program.
+
+4. throw : Throws an exception.
+
+5. throws : This declares the exception. This specifies that there may occur an exception in a method. It is used with the Method Signature.
